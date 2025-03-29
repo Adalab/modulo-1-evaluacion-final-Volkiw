@@ -1,0 +1,10 @@
+@use '../core/variables' as vars;
+
+.main-button {
+    background-color:vars.$main-color;
+    height: 48px;
+    width: 176px;
+    border:none;
+    color:#ffffff;
+    font-family:vars.$main-font;
+}

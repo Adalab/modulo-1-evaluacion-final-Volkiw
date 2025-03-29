@@ -1,0 +1,40 @@
+@use '../core/variables' as vars;
+.header{
+  background-image:url('../images/header.jpg');
+  background-position:center center;
+  background-repeat:none;
+  background-size:cover;
+  padding:40px 0;
+  height:100vh;
+  &__nav {
+    position: fixed;
+    margin: 10px 20px;
+  }
+  &__section{
+    display:flex;
+    align-items: center;
+    vertical-align: center;
+    height:100vh;
+    margin-top:-50px;
+  }
+}
+.box-header{
+  height:300px;
+  display:flex;
+  width:100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  vertical-align: center;
+
+  &__img{
+    max-width:200px;
+  }
+  &__title {
+    text-align:center;
+    color: vars.$main-color;
+    font-weight: 600;
+    font-size:1.5rem;
+  }
+}
+

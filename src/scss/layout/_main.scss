@@ -1,0 +1,48 @@
+@use '../core/variables' as vars;
+.section-articles {
+    display:grid;
+    grid-template-columns: 1fr;
+    text-align:center;
+    padding:50px 15px;
+    background-color: vars.$bg-color;
+    &__title{
+        color:vars.$main-color;
+    }
+}
+
+.card{
+    padding: 32px 15%;
+    &__img{
+        margin:32px;
+    }
+    &__title{
+        color:vars.$main-color;
+        font-size:1.25rem;
+    }
+    &__text{
+        color:vars.$main-color;
+    }
+}
+
+.section-cta{
+    text-align: center;
+    padding:50px 5px;
+    &__title {
+       font-weight:500; 
+    }
+    &__text{
+        margin-bottom:25px;
+    }
+    &__cta{
+        color:#ffffff;
+    }
+}
+.section-cta--colored{
+    background-color:#ff975a;
+    color:#ffffff;
+}
+
+.section-cta--white{
+    background-color: vars.$bg-color;
+    color: vars.$main-color;
+}
