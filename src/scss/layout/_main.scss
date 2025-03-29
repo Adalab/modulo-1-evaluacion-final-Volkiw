@@ -1,14 +1,40 @@
 @use '../core/variables' as vars;
-.section-articles {
-    display:grid;
-    grid-template-columns: 1fr;
-    text-align:center;
-    padding:50px 15px;
-    background-color: vars.$bg-color;
-    &__title{
-        color:vars.$main-color;
+
+.main{
+    &__section--white{
+        background-color: vars.$bg-color;
+        color: vars.$main-color;
+    }
+    &__section--colored{   
+        background-color:#ff975a;
+        color:#ffffff;
     }
 }
+
+.section-content{
+    text-align: center;
+    padding:50px 0px;
+    &__title {
+       font-weight:600; 
+       margin-bottom:10px;
+    }
+    &__text{
+        margin-bottom:25px;
+    }
+    &__cta{
+        color:#ffffff;
+    }
+    &__cards {
+        display:grid;
+        grid-template-columns: 1fr;
+        text-align:center;
+        padding:50px 15px;
+        @media all and (min-width: 900px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
 
 .card{
     padding: 32px 15%;
@@ -18,31 +44,21 @@
     &__title{
         color:vars.$main-color;
         font-size:1.25rem;
+        font-weight:600;
     }
     &__text{
         color:vars.$main-color;
     }
 }
 
-.section-cta{
-    text-align: center;
-    padding:50px 5px;
-    &__title {
-       font-weight:500; 
-    }
-    &__text{
-        margin-bottom:25px;
-    }
-    &__cta{
-        color:#ffffff;
-    }
-}
-.section-cta--colored{
-    background-color:#ff975a;
-    color:#ffffff;
-}
+.section-main--img-right{
+    padding-bottom:0;
 
-.section-cta--white{
-    background-color: vars.$bg-color;
-    color: vars.$main-color;
+    &__img{
+        width:100%;
+    }
+}
+.img{
+    margin:0;
+    padding:0;
 }
