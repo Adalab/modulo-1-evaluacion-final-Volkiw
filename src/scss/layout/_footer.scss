@@ -1,1 +1,40 @@
 @use '../core/variables' as vars;
+.footer{
+    background-color:vars.$main-color;
+    color:#b6c8c9;
+    &__container {
+        display:flex;
+        flex-direction: column;
+        padding:32px 25%;
+    }
+    &__img {
+        width:24px;
+        position:relative;
+        left:85%;
+        bottom:20px;
+    }
+}
+
+.footer-box{
+    padding:20px 0;
+    &__title{
+        font-size:1.25rem;
+        font-weight:400;
+    }
+}
+
+.nav-list {
+    list-style-type: none;
+    &__a{
+        color:#b6c8c9;
+        text-decoration:none;
+    }
+    &__img{
+        width:24px;
+    }
+}
+
+.nav-list--icons {
+    display:flex;
+    gap:5px;
+}
