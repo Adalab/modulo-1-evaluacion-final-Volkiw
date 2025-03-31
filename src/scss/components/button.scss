@@ -7,4 +7,8 @@
     border:none;
     color:#ffffff;
     font-family:vars.$main-font;
+    transition:0.5s;
+    &:hover{
+        background-color:#ff975a;
+    }
 }
